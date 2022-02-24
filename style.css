@@ -9,28 +9,41 @@
    
 }
 
-@keyframes move {
+/* @keyframes move {
     0% {
         transform: translateX(100px);
     }
     100%{
         transform: translateX(-500px);
-    }
-}
+    } */
+/* } */
 .car {
     position: absolute;
     top: 400px;
-    left: 800px;
-    animation: move 3s linear infinite;
+    left: 790px;
+    /* animation: move 3s linear infinite; */
 
 }
 .wheel1{
-    position: relative;
-    top: 448px;
-    left: 823px;
+    position: absolute;
+    top: 440px;
+    left: 810px;
+    animation: move 2s linear infinite;
 }
 .wheel2{
-    position: relative;
-    top: 390px;
-    left: 933px;
+    position: absolute;
+    
+    left: 920px;
+     top: 440px; 
+   
+    animation: move 2s linear infinite;
+}
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
