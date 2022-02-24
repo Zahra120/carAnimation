@@ -1,0 +1,36 @@
+.road {
+    height: 500px;
+    width: 1100px;
+    border: 2px black solid;
+    border-radius: 10%;
+    background-image: url("favpng_road-asphalt.png" );
+    background-size: cover;
+    position: relative;
+   
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(-500px);
+    }
+}
+.car {
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    animation: move 3s linear infinite;
+
+}
+.wheel1{
+    position: relative;
+    top: 448px;
+    left: 823px;
+}
+.wheel2{
+    position: relative;
+    top: 390px;
+    left: 933px;
+}
