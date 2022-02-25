@@ -5,30 +5,32 @@
     border-radius: 10%;
     background-image: url("favpng_road-asphalt.png" );
     background-size: cover;
+    background-position: 0 0 ;
     position: relative;
+    animation: move 2s linear  infinite; 
    
 }
 
-/* @keyframes move {
+@keyframes move {
     0% {
-        transform: translateX(100px);
+        background-position: 0 0 ;
     }
     100%{
-        transform: translateX(-500px);
-    } */
-/* } */
+        background-position: -100px 0 ;
+    } 
+ }
 .car {
     position: absolute;
     top: 400px;
     left: 790px;
-    /* animation: move 3s linear infinite; */
+    animation: up 1s linear 2; 
 
 }
 .wheel1{
     position: absolute;
     top: 440px;
     left: 810px;
-    animation: move 2s linear infinite;
+    animation: wheel 2s linear infinite;
 }
 .wheel2{
     position: absolute;
@@ -36,14 +38,23 @@
     left: 920px;
      top: 440px; 
    
-    animation: move 2s linear infinite;
+    animation: wheel 2s linear infinite;
 }
-@keyframes move {
+@keyframes wheel {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
+    }
+
+}
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
     }
 
 }
