@@ -1,15 +1,29 @@
-.road {
-    height: 500px;
+.city {
+    height: 700px;
     width: 1100px;
     border: 2px black solid;
-    border-radius: 10%;
-    background-image: url("favpng_road-asphalt.png" );
+  
+     background-image: url("—Pngtree—cartoon\ city\ highway\ illustration_4580783.png" ); 
     background-size: cover;
-    background-position: 0 0 ;
-    position: relative;
-    animation: move 2s linear  infinite; 
+    
+     position: relative; 
+     z-index: -1; 
+     /* animation: move 2s linear  infinite;   */
    
 }
+ .road{
+    height: 700px;
+    width: 1100px;
+    background-image: url("road.png" );
+    background-size: cover; 
+    position: absolute; 
+    top: 85px;
+  
+    animation: move 2s linear  infinite;  
+    z-index: 2;
+ 
+
+ } 
 
 @keyframes move {
     0% {
@@ -24,6 +38,7 @@
     top: 400px;
     left: 790px;
     animation: up 1s linear 2; 
+    z-index: 3;
 
 }
 .wheel1{
@@ -31,12 +46,14 @@
     top: 440px;
     left: 810px;
     animation: wheel 2s linear infinite;
+    z-index: 3;
 }
 .wheel2{
     position: absolute;
     
     left: 920px;
      top: 440px; 
+     z-index: 3;
    
     animation: wheel 2s linear infinite;
 }
@@ -54,7 +71,7 @@
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-5px);
     }
 
 }
