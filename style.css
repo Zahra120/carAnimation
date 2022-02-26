@@ -8,7 +8,7 @@
     
      position: relative; 
      z-index: -1; 
-     /* animation: move 2s linear  infinite;   */
+     animation: move 2s linear reverse infinite ;   
    
 }
  .road{
@@ -16,10 +16,10 @@
     width: 1100px;
     background-image: url("road.png" );
     background-size: cover; 
+    background-repeat: repeat-x;
     position: absolute; 
-    top: 85px;
-  
-    animation: move 2s linear  infinite;  
+    top: 45px;
+    animation: move 3s linear  infinite;  
     z-index: 2;
  
 
@@ -28,9 +28,11 @@
 @keyframes move {
     0% {
         background-position: 0 0 ;
+        /* transform: translateX(0); */
     }
     100%{
-        background-position: -100px 0 ;
+        background-position: -300px 0 ;
+        /* transform: translateX(500px); */
     } 
  }
 .car {
